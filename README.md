@@ -1,0 +1,1 @@
+# imdb-series-manager
