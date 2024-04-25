@@ -8,23 +8,23 @@ import utils.HibernateUtil;
 import java.util.List;
 
 public class ServidorDAO {
-    private static Transaction tx = null;
+    private static Transaction transaction = null;
     private static Session session = null;
 
     public static void create(Object object, boolean autocommit) throws Exception {
         try {
             if (autocommit == true) {
                 session = HibernateUtil.getSessionFactory().openSession();
-                tx = session.beginTransaction();
+                transaction = session.beginTransaction();
                 session.persist(object);
-                tx.commit();
+                transaction.commit();
                 session.close();
             } else {
                 session.persist(object);
             }
         } catch (HibernateException he) {
             he.printStackTrace();
-            if (tx != null) {
+            if (transaction != null) {
 //                tx.rollback();
             }
             session.close();
@@ -39,17 +39,17 @@ public class ServidorDAO {
         try {
             if (autocommit == true) {
                 session = HibernateUtil.getSessionFactory().openSession();
-                tx = session.beginTransaction();
+                transaction = session.beginTransaction();
                 object = session.merge(object);
-                tx.commit();
+                transaction.commit();
                 session.close();
             } else {
                 object = session.merge(object);
             }
             return object;
         } catch (HibernateException he) {
-            if (tx != null) {
-                tx.rollback();
+            if (transaction != null) {
+                transaction.rollback();
             }
             session.close();
             throw he;
@@ -111,16 +111,16 @@ public class ServidorDAO {
         try {
             if (autocommit == true) {
                 session = HibernateUtil.getSessionFactory().openSession();
-                tx = session.beginTransaction();
+                transaction = session.beginTransaction();
                 session.remove(object);
-                tx.commit();
+                transaction.commit();
                 session.close();
             } else {
                 session.remove(object);
             }
         } catch (HibernateException he) {
-            if (tx != null) {
-                tx.rollback();
+            if (transaction != null) {
+                transaction.rollback();
             }
             session.close();
             throw he;
@@ -134,10 +134,10 @@ public class ServidorDAO {
     public static void transaction() {
         try {
             session = HibernateUtil.getSessionFactory().openSession();
-            tx = session.beginTransaction();
+            transaction = session.beginTransaction();
         } catch (HibernateException he) {
-            if (tx != null) {
-                tx.rollback();
+            if (transaction != null) {
+                transaction.rollback();
             }
             session.close();
             throw he;
@@ -146,11 +146,11 @@ public class ServidorDAO {
 
     public static void commit() throws Exception {
         try {
-            tx.commit();
+            transaction.commit();
             session.close();
         } catch (HibernateException he) {
-            if (tx != null) {
-                tx.rollback();
+            if (transaction != null) {
+                transaction.rollback();
             }
             throw he;
         }
