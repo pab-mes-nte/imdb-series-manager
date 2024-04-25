@@ -13,10 +13,10 @@ public class Main {
         try {
             ServidorDAO.transaction();
             ServidorDAO.create(serie1, false);
-            ServidorDAO.create(serie2, false);
-            ServidorDAO.create(serie3, false);
-            ServidorDAO.create(serie4, false);
-            ServidorDAO.create(serie5, false);
+//            ServidorDAO.create(serie2, false);
+//            ServidorDAO.create(serie3, false);
+//            ServidorDAO.create(serie4, false);
+//            ServidorDAO.create(serie5, false);
             ServidorDAO.commit();
             System.out.println(ServidorDAO.readObject("FROM Series WHERE id = " + serie1.getId()));
         } catch (Exception e) {
