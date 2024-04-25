@@ -1,0 +1,27 @@
+
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Êî¬Û8‡³×¨ñ1J$1610ec56-a779-499d-bb39-f40e1d53faa5
+ˆ	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(‰µìÚ8‡³×¨ñ1J$6315c5ed-210b-4599-9519-fcff74135757
+ˆ	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(šÌ‹†8ˆ³×¨ñ1J$7d30be8d-a510-4cb1-a574-215335e90c31
+‰	java:S112“"FDefine and throw a dedicated exception instead of using a generic one.(°üğ8ˆ³×¨ñ1J$52aab0b0-d680-4d5a-90cf-85bbe14ebf27
+p
+java:S5411("(Use a primitive boolean expression here.(Ô…¶Øúÿÿÿÿ8‰³×¨ñ1J$202bb02e-61fb-434c-8a68-a09c160fdc63
+
+java:S2095^"EUse try-with-resources or close this "Session" in a "finally" clause.(íÊ‹ƒúÿÿÿÿ8£³×¨ñ1J$5b1da2a6-812b-48a9-9301-da26f9c8e6e5
+
+java:S2095F"EUse try-with-resources or close this "Session" in a "finally" clause.(íÊ‹ƒúÿÿÿÿ8¢³×¨ñ1J$e2274c2f-3cca-49a3-bc9f-48b8fc23bd7d
+{
+java:S2589˜"7Remove this expression which always evaluates to "true"(ê•â¨8¤³×¨ñ1J$b74d45d6-e0e0-43b5-b1ee-ace441f30ee9
+‚
+java:S1118
+":Add a private constructor to hide the implicit public one.(•§¤ûÿÿÿÿ8¦³×¨ñ1J$5ae2dd1c-7a51-4c8e-9414-a3c7a70fc7e2
+o
+java:S1125"'Remove the unnecessary boolean literal.(Ô…¶Øúÿÿÿÿ8©³×¨ñ1J$d0a1b86a-21f5-4c33-8d69-e10235f91c0a
+ƒ	java:S125"<This block of commented-out lines of code should be removed.( Ãùÿÿÿÿ8«³×¨ñ1J$810cbe36-1a01-4482-acea-ccb13e89a9d6
+o
+java:S1125("'Remove the unnecessary boolean literal.(Ô…¶Øúÿÿÿÿ8¬³×¨ñ1J$65025e2f-2684-4045-9003-2774a5aa8f2f
+o
+java:S1125E"'Remove the unnecessary boolean literal.(Ô…¶Øúÿÿÿÿ8­³×¨ñ1J$ce5fdd3b-8393-49ef-8442-6e0b1268e1c9
+n
+java:S1168Q"+Return an empty collection instead of null.(¥¹ï8¯³×¨ñ1J$6d46ac31-116e-40ac-a028-e600763b44df
+o
+java:S1125p"'Remove the unnecessary boolean literal.(Ô…¶Øúÿÿÿÿ8µ³×¨ñ1J$92f53df5-3075-4dc4-95a5-abd57fe3bd91
